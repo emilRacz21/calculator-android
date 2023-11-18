@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button">
+        <item name="android:backgroundTint">@color/acNums</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginStart">9sp</item>
+        <item name="android:layout_width">83sp</item>
+        <item name="android:layout_height">62sp</item>
+    </style>
+
+    <style name="button.gray">
+        <item name="android:backgroundTint">@color/acNums</item>
+        <item name="android:textColor">@color/acText</item>
+    </style>
+
+    <style name="button.orange">
+        <item name="android:backgroundTint">@color/operationsNums</item>
+        <item name="android:textColor">@color/numberText</item>
+        <item name="android:layout_marginEnd">12sp</item>
+    </style>
+
+    <style name="button.dark">
+        <item name="android:backgroundTint">@color/numberButton</item>
+        <item name="android:textColor">@color/numberText</item>
+    </style>
+    <style name="buttonLong">
+        <item name="android:textColor">@color/numberText</item>
+        <item name="android:backgroundTint">@color/numberButton</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginTop">8sp</item>
+        <item name="android:layout_marginStart">10sp</item>
+        <item name="android:layout_width">174sp</item>
+        <item name="android:layout_height">62sp</item>
+    </style>
+    <style name="previousNum">
+        <item name="android:layout_marginEnd">0sp</item>
+        <item name="android:layout_marginStart">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">end</item>
+    </style>
+    <style name="previousNum1">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">end</item>
+    </style>
+    <style name="horizontalScrollFirst">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_marginEnd">29sp</item>
+        <item name="android:layout_marginStart">29sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layoutDirection">ltr</item>
+        <item name="android:layout_marginTop">0sp</item>
+    </style>
+    <style name="HorizontalScrollView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_marginEnd">29sp</item>
+        <item name="android:layout_marginStart">29sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+    <style name="resultView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/resultNum</item>
+        <item name="android:textSize">62sp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+    <style name="linearLayoutView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+</resources>

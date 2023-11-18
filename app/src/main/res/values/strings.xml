@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="empty">  </string>
+    <string name="AC">AC</string>
+    <string name="C">C</string>
+    <string name="history">History</string>
+    <string name="clear_all">Clear all</string>
+    <string name="back"> ←</string>
+    <string name="value">Your value is too large</string>
+</resources>

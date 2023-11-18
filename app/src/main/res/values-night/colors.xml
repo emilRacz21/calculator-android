@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#000000</color>
+    <color name="holder">#3A3A3A</color>
+    <color name="resultNum">#FFFFFF</color>
+    <color name="operationsNums">#FF9800</color>
+    <color name="acNums">#959595</color>
+    <color name="acText">#FF000000</color>
+    <color name="numberButton">#2E2E2E</color>
+    <color name="numberText">#FFFFFFFF</color>
+    <color name="landBtn">#252525</color>
+</resources>

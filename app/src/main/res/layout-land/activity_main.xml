@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <HorizontalScrollView
+        android:id="@+id/horizont1"
+        style="@style/horizontalScrollFirst">
+        <LinearLayout
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/empty"
+                android:id="@+id/previousnum"
+                style="@style/previousNum1" />
+            <TextView
+                android:text="@string/empty"
+                android:id="@+id/operate"
+                style="@style/previousNum"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        style="@style/HorizontalScrollView">
+        <TextView
+            android:id="@+id/result"
+            android:text="0"
+            style="@style/resultView" />
+    </HorizontalScrollView>
+    <LinearLayout
+        android:background="@drawable/keyholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19sp"
+            android:orientation="horizontal">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <TableRow>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            style="@style/button.dark_land"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                        <ImageView
+                            android:id="@+id/historyOption"
+                            android:layout_marginStart="39sp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:src="@drawable/history"/>
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/c1"
+                        style="@style/button.dark_land"
+                        android:text="(" />
+                    <Button
+                        android:id="@+id/c2"
+                        style="@style/button.dark_land"
+                        android:text=")" />
+                    <Button
+                        android:textSize="16sp"
+                        style="@style/button.dark_land"
+                        android:text="mc" />
+                    <Button
+                        android:textSize="16sp"
+                        style="@style/button.dark_land"
+                        android:text="m+" />
+                    <Button
+                        android:textSize="16sp"
+                        style="@style/button.dark_land"
+                        android:text="m-" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:textSize="16sp"
+                        style="@style/button.dark_land"
+                        android:text="2ⁿᵈ" />
+                    <Button
+                        android:id="@+id/x2"
+                        style="@style/button.dark_land"
+                        android:text="x²" />
+
+                    <Button
+                        android:id="@+id/x3"
+                        style="@style/button.dark_land"
+                        android:text="x³" />
+
+                    <Button
+                        android:id="@+id/xy"
+                        style="@style/button.dark_land"
+                        android:text="xʸ" />
+                    <Button
+                        android:id="@+id/ex"
+                        style="@style/button.dark_land"
+                        android:text="eˣ" />
+                    <Button
+                        android:id="@+id/o10x"
+                        android:textSize="15sp"
+                        style="@style/button.dark_land"
+                        android:text="10ˣ" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/divide1"
+                        style="@style/button.dark_land"
+                        android:text="¹/ₓ" />
+                    <Button
+                        android:textSize="16sp"
+                        style="@style/button.dark_land"
+                        android:text="²√x" />
+                    <Button
+                        android:textSize="16sp"
+                        style="@style/button.dark_land"
+                        android:text="³√x" />
+                    <Button
+                        android:textSize="15sp"
+                        style="@style/button.dark_land"
+                        android:text="ʸ√x" />
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="ln" />
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="log₁₀"
+                        android:textSize="11sp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="x!" />
+
+                    <Button
+                        style="@style/button.dark_land"
+                        android:textSize="16sp"
+                        android:text="sin" />
+                    <Button
+                        android:textSize="14sp"
+                        style="@style/button.dark_land"
+                        android:text="cos" />
+                    <Button
+                        android:textSize="15sp"
+                        style="@style/button.dark_land"
+                        android:text="tan" />
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="e" />
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="EE" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:textSize="13sp"
+                        style="@style/button.dark_land"
+                        android:text="Rad" />
+                    <Button
+                        android:textSize="12sp"
+                        style="@style/button.dark_land"
+                        android:text="sinh" />
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="cosh"
+                        android:textSize="10sp"/>
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="tanh"
+                        android:textSize="11sp"/>
+                    <Button
+                        android:id="@+id/pi"
+                        style="@style/button.dark_land"
+                        android:text="π" />
+                    <Button
+                        style="@style/button.dark_land"
+                        android:text="Rand"
+                        android:textSize="10sp"/>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <Button
+                        android:id="@+id/button0"
+                        style="@style/button.gray"
+                        android:text="AC"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/button1"
+                        style="@style/button.gray"
+                        android:text="+/-"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/button.gray"
+                        android:text="%" />
+                    <Button
+                        android:id="@+id/button3"
+                        style="@style/button.orange"
+                        android:text="÷" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/button4"
+                        style="@style/button.dark"
+                        android:text="7" />
+                    <Button
+                        android:id="@+id/button5"
+                        style="@style/button.dark"
+                        android:text="8" />
+                    <Button
+                        android:id="@+id/button6"
+                        style="@style/button.dark"
+                        android:text="9" />
+                    <Button
+                        android:id="@+id/button7"
+                        style="@style/button.orange"
+                        android:text="×" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/button8"
+                        style="@style/button.dark"
+                        android:text="4" />
+                    <Button
+                        android:id="@+id/button9"
+                        style="@style/button.dark"
+                        android:text="5" />
+                    <Button
+                        android:id="@+id/button10"
+                        style="@style/button.dark"
+                        android:text="6" />
+                    <Button
+                        android:id="@+id/button11"
+                        style="@style/button.orange"
+                        android:text="-" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/button12"
+                        style="@style/button.dark"
+                        android:text="1" />
+                    <Button
+                        android:id="@+id/button13"
+                        style="@style/button.dark"
+                        android:text="2" />
+                    <Button
+                        android:id="@+id/button14"
+                        style="@style/button.dark"
+                        android:text="3" />
+                    <Button
+                        android:id="@+id/button15"
+                        style="@style/button.orange"
+                        android:text="+" />
+                </TableRow>
+                <LinearLayout
+                    android:layout_marginTop="-5sp"
+                    style="@style/linearLayoutView"
+                    android:layout_gravity="end">
+                    <Button
+                        android:id="@+id/button16"
+                        style="@style/buttonLong"
+                        android:text="0" />
+                    <Button
+                        android:id="@+id/button17"
+                        style="@style/button.dark"
+                        android:layout_marginTop="8sp"
+                        android:text="." />
+                    <Button
+                        android:id="@+id/button18"
+                        style="@style/button.orange"
+                        android:layout_marginTop="8sp"
+                        android:text="=" />
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
